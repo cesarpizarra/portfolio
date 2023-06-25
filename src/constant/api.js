@@ -134,10 +134,10 @@ export const skillsData = [
     name: "NodeJs",
     logo: nodejsLogo,
   },
-  {
-    name: "Mongo DB",
-    logo: mongoDbLogo,
-  },
+  // {
+  //   name: "Mongo DB",
+  //   logo: mongoDbLogo,
+  // },
   {
     name: "Git",
     logo: gitLogo,
