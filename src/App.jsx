@@ -1,4 +1,4 @@
-import React, {useEffect} from "react";
+import React, { useEffect } from "react";
 import NavBar from "./components/NavBar";
 import Home from "./components/Home";
 import About from "./components/About";
@@ -10,7 +10,6 @@ import "./styles/loading.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import "./styles/scroll.css";
-
 
 // Loading effect
 const Loader = () => {
@@ -56,14 +55,13 @@ const App = () => {
         <Loader />
       ) : (
         <div>
-          {" "}
           <NavBar />
           <Home />
           <About />
           <Skills />
           <Projects />
           <Contact />
-          <Footer />{" "}
+          <Footer />
         </div>
       )}
     </div>
