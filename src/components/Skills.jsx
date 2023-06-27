@@ -40,8 +40,9 @@ const Skills = () => {
                 </span>
               ))}
             </p>
-            <p className="py-4">
-              These are the technologies and tools I use for web development
+            <p className="py-4 text-[#8b9bca]">
+              These are the technologies and tools I use for frontend
+              development
             </p>
           </div>
           <div className="w-full grid grid-cols-2 sm:grid-cols-5 gap-4 text-center py-3">

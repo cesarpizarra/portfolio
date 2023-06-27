@@ -40,7 +40,7 @@ const SkillsPage = () => {
                 </span>
               ))}
             </p>
-            <p className="py-4">
+            <p className="py-4 text-[#8b9bca]">
               These are the technologies and tools I use for web development
             </p>
           </div>
