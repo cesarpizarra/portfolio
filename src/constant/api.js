@@ -153,7 +153,7 @@ export const projects = [
     backgroundImage: Portfolio,
     title: "My Personal Portfolio",
     description: "This is my personal portfolio: a showcase of my work.",
-    githubLink: "https://github.com/your-username/portfolio",
+    githubLink: "https://github.com/cesarpizarra/portfolio",
     externalLink: "https://example.com",
   },
   {
@@ -161,7 +161,7 @@ export const projects = [
     title: "Url-Shortening-Api-Master",
     description:
       "A Url-Shortening-Api-Master challenge from the Frontend Mentor website.",
-    githubLink: "https://github.com/your-username/movieflix",
+    githubLink: "https://github.com/cesarpizarra/url-shortening-api-master",
     externalLink: "https://cesarpizarra.github.io/url-shortening-api-master/",
   },
   {
@@ -169,7 +169,8 @@ export const projects = [
     title: "Intro Section with Dropdown Navigation",
     description:
       "A Intro Section with Dropdown Navigation challenge from the Frontend Mentor website.",
-    githubLink: "https://github.com/your-username/introsection",
+    githubLink:
+      "https://github.com/cesarpizarra/intro-section-with-dropdown-navigation-main",
     externalLink:
       "https://cesarpizarra.github.io/intro-section-with-dropdown-navigation-main/",
   },
@@ -178,7 +179,7 @@ export const projects = [
     title: "Movie Flix",
     description:
       "Sleek movie app showcasing OMDb API data and stunning visuals.",
-    githubLink: "https://github.com/your-username/movieflix",
+    githubLink: "https://github.com/cesarpizarra/movie-app",
     externalLink: "https://example.com",
   },
   {
