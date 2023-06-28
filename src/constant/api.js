@@ -154,7 +154,7 @@ export const projects = [
     title: "My Personal Portfolio",
     description: "This is my personal portfolio: a showcase of my work.",
     githubLink: "https://github.com/cesarpizarra/portfolio",
-    externalLink: "https://example.com",
+    externalLink: "https://cesarpizarra.github.io/portfolio/",
   },
   {
     backgroundImage: UrlMasterLink,
