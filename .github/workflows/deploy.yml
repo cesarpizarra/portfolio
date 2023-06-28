@@ -33,7 +33,11 @@ jobs:
       - name: Set up Node
         uses: actions/setup-node@v3
         with:
+<<<<<<< HEAD
           node-version: 18
+=======
+          node-version: 16
+>>>>>>> 80b5ac8620f03717cb7dd44543e234e57a1aa649
           cache: "npm"
       - name: Install dependencies
         run: npm install
