@@ -180,7 +180,7 @@ export const projects = [
     description:
       "Sleek movie app showcasing OMDb API data and stunning visuals.",
     githubLink: "https://github.com/cesarpizarra/movie-app",
-    externalLink: "https://example.com",
+    externalLink: "https://cesarpizarra.github.io/movie-app/",
   },
   {
     backgroundImage: NewsHomePage,

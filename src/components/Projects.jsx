@@ -22,7 +22,7 @@ const Project = () => {
 
   const text = "Projects";
 
-  const slicedProjects = projects.slice(0, 6); // Slice the first 4 projects
+  const slicedProjects = projects.slice(0, 6); // Slice the first 6 projects
 
   return (
     <MainLayout>
@@ -59,18 +59,20 @@ const Project = () => {
             {slicedProjects.map((project, index) => (
               <div key={index} className="mb-7" data-aos="fade-up">
                 <div className="grid md:grid-cols-2">
-                  <div>
+                  <div className="relative overflow-hidden group">
                     <img
                       src={project.backgroundImage}
                       alt={project.title}
-                      className="rounded-md w-full h-full hover:scale-105 transition-transform duration-300"
+                      className="w-full h-full transition-transform duration-300 group-hover:scale-105 group-hover:opacity-100"
                     />
+                    <div className="absolute top-0 left-0 w-full h-full bg-black opacity-25 transition-opacity duration-300 group-hover:opacity-0"></div>
                   </div>
+
                   <div className="flex flex-col justify-center ml-4">
                     <h2 className="text-lg text-center mb-2">
                       {project.title}
                     </h2>
-                    <p className="text-justify text-[#8b9bca] text-sm tracking-normal">
+                    <p className="text-center text-[#8b9bca] text-sm tracking-normal">
                       {project.description}
                     </p>
                     <div className="flex justify-center gap-2 py-2">

@@ -20,7 +20,7 @@ const NavBar = () => {
 
   let email = "cpizarra002@gmail.com";
   return (
-    <div className="z-10 fixed w-full bg-[#111623] flex justify-between items-center px-5 md:px-10 lg:px-8 py-3">
+    <div className="z-10 fixed w-full bg-[#111623] flex justify-between items-center px-3 md:px-10  py-3">
       <div className="flex items-center justify-center">
         <img src={logo.logo} alt="Log" className="w-16" />
       </div>
