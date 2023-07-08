@@ -59,13 +59,20 @@ const Project = () => {
             {slicedProjects.map((project, index) => (
               <div key={index} className="mb-7" data-aos="fade-up">
                 <div className="grid md:grid-cols-2">
-                  <div className="relative overflow-hidden group">
-                    <img
-                      src={project.backgroundImage}
-                      alt={project.title}
-                      className="w-full h-full transition-transform duration-300 group-hover:scale-105 group-hover:opacity-100"
-                    />
-                    <div className="absolute top-0 left-0 w-full h-full bg-black opacity-25 transition-opacity duration-300 group-hover:opacity-0"></div>
+                  <div className="cursor-pointer relative overflow-hidden group">
+                    <a
+                      href={project.externalLink}
+                      className="block w-full h-full"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img
+                        src={project.backgroundImage}
+                        alt={project.title}
+                        className="w-full h-full transition-transform duration-300 group-hover:scale-105 group-hover:opacity-100"
+                      />
+                      <div className="absolute top-0 left-0 w-full h-full bg-black opacity-25 transition-opacity duration-300 group-hover:opacity-0"></div>
+                    </a>
                   </div>
 
                   <div className="flex flex-col justify-center ml-4">

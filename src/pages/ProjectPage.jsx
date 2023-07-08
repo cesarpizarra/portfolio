@@ -55,11 +55,18 @@ const ProjectPage = () => {
                 data-aos="fade-up"
                 className="shadow-md shadow-[#040c16] group container flex flex-col justify-end mx-auto relative overflow-hidden"
               >
-                <img
-                  src={project.backgroundImage}
-                  alt={project.title}
-                  className="w-full group-hover:scale-105 transition-transform duration-300"
-                />
+                <a
+                  href={project.externalLink}
+                  className="block w-full h-full"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src={project.backgroundImage}
+                    alt={project.title}
+                    className="w-full group-hover:scale-105 transition-transform duration-300"
+                  />
+                </a>
                 {/* Title and icons */}
                 <div className="bg-[#1a1a2e] py-2 flex items-center justify-center flex-col group-hover:opacity-100">
                   <span className="text-md">{project.title}</span>

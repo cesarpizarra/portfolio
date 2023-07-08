@@ -21,6 +21,7 @@ import UrlMasterLink from "../assets/projects/url-master.png";
 import GradeCalculator from "../assets/projects/GradeCalculator.png";
 import IntroSection from "../assets/projects/IntroSection.png";
 import LoginForm from "../assets/projects/LoginForm.png";
+import TodoApp from "../assets/projects/TodoApp.png";
 import MovieFlix from "../assets/projects/MovieFlix.png";
 import NewsHomePage from "../assets/projects/NewsHomePage.png";
 import WeatherApp from "../assets/projects/WeatherApp.png";
@@ -165,6 +166,13 @@ export const projects = [
     externalLink: "https://cesarpizarra.github.io/url-shortening-api-master/",
   },
   {
+    backgroundImage: TodoApp,
+    title: "Todo App",
+    description: "A News Home Page challenge from the Frontend Mentor website.",
+    githubLink: "https://github.com/cesarpizarra/todo-app",
+    externalLink: "https://todo-app-teal-nu.vercel.app/",
+  },
+  {
     backgroundImage: IntroSection,
     title: "Intro Section with Dropdown Navigation",
     description:
@@ -174,14 +182,14 @@ export const projects = [
     externalLink:
       "https://cesarpizarra.github.io/intro-section-with-dropdown-navigation-main/",
   },
-  {
-    backgroundImage: MovieFlix,
-    title: "Movie Flix",
-    description:
-      "Sleek movie app showcasing OMDb API data and stunning visuals.",
-    githubLink: "https://github.com/cesarpizarra/movie-app",
-    externalLink: "https://cesarpizarra.github.io/movie-app/",
-  },
+  // {
+  //   backgroundImage: MovieFlix,
+  //   title: "Movie Flix",
+  //   description:
+  //     "Sleek movie app showcasing OMDb API data and stunning visuals.",
+  //   githubLink: "https://github.com/cesarpizarra/movie-app",
+  //   externalLink: "https://cesarpizarra.github.io/movie-app/",
+  // },
   {
     backgroundImage: NewsHomePage,
     title: "News Home Page",
