@@ -68,7 +68,7 @@ const ProjectPage = () => {
                   />
                 </a>
                 {/* Title and icons */}
-                <div className="bg-[#1a1a2e] py-2 flex items-center justify-center flex-col group-hover:opacity-100">
+                <div className="bg-[#12122219] py-2 flex items-center justify-center flex-col group-hover:opacity-100">
                   <span className="text-md">{project.title}</span>
                   <div className="text-[#2ABC7F] flex justify-center gap-6 pt-2">
                     <a
