@@ -3,8 +3,7 @@ import { socialLinks } from "../constant/api.js";
 
 const Footer = () => {
   return (
-    <div
-    className="w-full bg-[#111623] text-white max-w-[1440px] px-5 md:px-10 mx-auto">
+    <div className="w-full bg-[#111623] text-white max-w-[1440px] px-5 md:px-10 mx-auto">
       <footer>
         {/* Social icons */}
         <div className="flex justify-center items-center xl:hidden">
