@@ -153,7 +153,7 @@ export const projects = [
   {
     backgroundImage: Portfolio,
     title: "My Personal Portfolio",
-    description: "This is my personal portfolio: a showcase of my work.",
+    description: "This is my personal portfolio: a showcase of my work. ",
     githubLink: "https://github.com/cesarpizarra/portfolio",
     externalLink: "https://cesarpizarra.github.io/portfolio/",
   },
@@ -168,7 +168,8 @@ export const projects = [
   {
     backgroundImage: TodoApp,
     title: "Todo App",
-    description: "A News Home Page challenge from the Frontend Mentor website.",
+    description:
+      "A Challenge challenge from the Frontend Mentor website, with a dark/light mode theme switcher and local storage.",
     githubLink: "https://github.com/cesarpizarra/todo-app",
     externalLink: "https://todo-app-teal-nu.vercel.app/",
   },
@@ -209,6 +210,6 @@ export const projects = [
 
 export const contacts = {
   get: "Get In Touch",
-  info: "I am actively seeking opportunities as a frontend developer and would love to contribute to real projects while expanding my skill set. If you're interested, don't hesitate to reach out via email. I'm always available to connect and discus potential collaborations.",
+  info: "I am actively seeking opportunities as a frontend developer and would love to contribute to real projects while expanding my skill set. If you're interested, don't hesitate to reach out via email. I'm always available to connect and discuss potential collaborations.",
   button: "Say Hello!",
 };

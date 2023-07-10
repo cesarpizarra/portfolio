@@ -57,7 +57,7 @@ const Project = () => {
           {/* Grid items */}
           <div className="flex-grow">
             {slicedProjects.map((project, index) => (
-              <div key={index} className="mb-7" data-aos="fade-up">
+              <div key={index} className="mb-24 md:mb-36" data-aos="fade-up">
                 <div className="grid md:grid-cols-2">
                   <div className="cursor-pointer relative overflow-hidden group">
                     <a
