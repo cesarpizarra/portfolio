@@ -75,7 +75,7 @@ const Project = () => {
                     </a>
                   </div>
 
-                  <div className="flex flex-col justify-center w-full px-8 md:px-12 py-2 md:rounded absolute right-0 bottom-[-4rem] bg-[#1c2131]  max-w-[800px]">
+                  <div className="flex flex-col justify-center w-full px-2 md:px-12 py-2 md:rounded absolute right-0 bottom-[-4rem] bg-[#1c2131]  max-w-[800px]">
                     <h2 className="text-2xl mb-2 text-[#2ABC7F] font-semibold text-center">
                       {project.title}
                     </h2>
