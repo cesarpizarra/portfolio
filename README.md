@@ -29,4 +29,3 @@ Feel free to browse through the projects and explore the code.
 If you have any questions, suggestions, or collaboration opportunities, please feel free to reach out to me. You can find my contact information on my portfolio website.
 
 Thank you for visiting my portfolio repository!
-

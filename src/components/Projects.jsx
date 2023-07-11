@@ -58,8 +58,8 @@ const Project = () => {
           <div className="flex-grow">
             {slicedProjects.map((project, index) => (
               <div key={index} className="mb-24 md:mb-36" data-aos="fade-up">
-                <div className="grid md:grid-cols-2">
-                  <div className="cursor-pointer relative overflow-hidden group">
+                <div className="flex max-w-[800px]">
+                  <div className="mb-20 md:mb-2 cursor-pointer relative overflow-hidden group ">
                     <a
                       href={project.externalLink}
                       className="block w-full h-full"
@@ -75,11 +75,11 @@ const Project = () => {
                     </a>
                   </div>
 
-                  <div className="flex flex-col justify-center ml-4">
-                    <h2 className="text-lg text-center mb-2">
+                  <div className="flex flex-col justify-center w-full px-8 md:px-12 py-2 md:rounded absolute right-0 bottom-[-4rem] bg-[#1c2131]  max-w-[800px]">
+                    <h2 className="text-2xl mb-2 text-[#2ABC7F] font-semibold text-center">
                       {project.title}
                     </h2>
-                    <p className="text-center text-[#8b9bca] text-sm tracking-normal">
+                    <p className="text-center text-[#8b9bca] text-md tracking-normal">
                       {project.description}
                     </p>
                     <div className="flex justify-center gap-2 py-2">

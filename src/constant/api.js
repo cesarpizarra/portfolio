@@ -155,7 +155,7 @@ export const projects = [
     title: "My Personal Portfolio",
     description: "This is my personal portfolio: a showcase of my work. ",
     githubLink: "https://github.com/cesarpizarra/portfolio",
-    externalLink: "https://cesarpizarra.github.io/portfolio/",
+    externalLink: "https://cezaru.vercel.app/",
   },
   {
     backgroundImage: UrlMasterLink,
@@ -210,6 +210,6 @@ export const projects = [
 
 export const contacts = {
   get: "Get In Touch",
-  info: "I am actively seeking opportunities as a frontend developer and would love to contribute to real projects while expanding my skill set. If you're interested, don't hesitate to reach out via email. I'm always available to connect and discuss potential collaborations.",
+  info: "I am actively seeking opportunities as a web developer and would love to contribute to real projects while expanding my skill set. If you're interested, don't hesitate to reach out via email. I'm always available to connect and discuss potential collaborations.",
   button: "Say Hello!",
 };
