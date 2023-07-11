@@ -27,4 +27,4 @@ dist-ssr
 
 # Ignore .github folder and its contents
 /.github
-/.github/workflows
+/.github/workflows/deploy.yml
