@@ -23,23 +23,13 @@ const NavBar = () => {
   return (
     <div className="z-10 fixed w-full bg-[#111623] flex justify-between items-center px-3 md:px-10  py-3">
       <div className="flex items-center justify-center">
-        <img
-          src={logoImage}
-          alt="Logo"
-          className="w-16 animate__animated animate__fadeInDown"
-        />
+        <img src={logoImage} alt="Logo" className="w-16 " />
       </div>
 
       {/* menu item */}
       <ul className="hidden md:flex justify-center items-center menu text-white">
         {navLinks.map((link, index) => (
-          <li
-            key={index}
-            className={` ${
-              !nav ? "animate__animated animate__fadeInDown" : ""
-            }`}
-            style={{ animationDelay: `${index * 0.5}s` }}
-          >
+          <li key={index}>
             <Link to={link.path} onClick={handleNavClick}>
               {link.label}
             </Link>
@@ -48,10 +38,7 @@ const NavBar = () => {
       </ul>
 
       {/* Hamburger bar menu */}
-      <div
-        onClick={handleClickNav}
-        className="md:hidden z-10 cursor-pointer animate__animated animate__fadeInDown"
-      >
+      <div onClick={handleClickNav} className="md:hidden z-10 cursor-pointer">
         {!nav ? (
           <BiMenuAltRight size={40} className="text-white" />
         ) : (
@@ -71,11 +58,19 @@ const NavBar = () => {
           <li
             key={index}
             className={`py-6 text-2xl ${
-              nav ? "animate__animated animate__backInUp" : ""
+              nav
+                ? "animate__animated animate__backInUp"
+                : "animate__animated animate__backInDown"
             }`}
             style={{ animationDelay: `${index * 0.5}s` }}
           >
-            <Link to={link.path} onClick={handleNavClick}>
+            <Link
+              to={link.path}
+              onClick={() => {
+                handleNavClick();
+                link.clicked = true; // Set a property to track if the link is clicked
+              }}
+            >
               {link.label}
             </Link>
           </li>
