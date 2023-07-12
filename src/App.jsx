@@ -10,6 +10,7 @@ import "./styles/loading.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import "./styles/scroll.css";
+import "animate.css";
 
 // Loading effect
 const Loader = () => {

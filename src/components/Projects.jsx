@@ -59,7 +59,7 @@ const Project = () => {
             {slicedProjects.map((project, index) => (
               <div key={index} className="mb-24 md:mb-36" data-aos="fade-up">
                 <div className="flex max-w-[800px]">
-                  <div className="mb-20 md:mb-2 cursor-pointer relative overflow-hidden group ">
+                  <div className="  cursor-pointer relative overflow-hidden group ">
                     <a
                       href={project.externalLink}
                       className="block w-full h-full"
@@ -71,12 +71,12 @@ const Project = () => {
                         alt={project.title}
                         className="w-full h-full transition-transform duration-300 group-hover:scale-105 group-hover:opacity-100"
                       />
-                      <div className="absolute top-0 left-0 w-full h-full bg-black opacity-25 transition-opacity duration-300 group-hover:opacity-0"></div>
+                      <div className="abssolute top-0 left-0 w-full h-full bg-black opacity-25 transition-opacity duration-300 group-hover:opacity-0"></div>
                     </a>
                   </div>
 
-                  <div className="flex flex-col justify-center w-full px-2 md:px-12 py-2 md:rounded absolute right-0 bottom-[-4rem] bg-[#1c2131]  max-w-[800px]">
-                    <h2 className="text-2xl mb-2 text-[#2ABC7F] font-semibold text-center">
+                  <div className="flex flex-col justify-center w-full px-2 md:px-12 py-2 md:rounded absolute right-0  bottom-[-4rem] bg-[#1c2131]  max-w-[800px]">
+                    <h2 className="md:text-2xl mb-2 text-white font-semibold text-center">
                       {project.title}
                     </h2>
                     <p className="text-center text-[#8b9bca] text-md tracking-normal">

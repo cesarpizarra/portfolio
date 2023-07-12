@@ -173,16 +173,7 @@ export const projects = [
     githubLink: "https://github.com/cesarpizarra/todo-app",
     externalLink: "https://todo-app-teal-nu.vercel.app/",
   },
-  {
-    backgroundImage: IntroSection,
-    title: "Intro Section with Dropdown Navigation",
-    description:
-      "A Intro Section with Dropdown Navigation challenge from the Frontend Mentor website.",
-    githubLink:
-      "https://github.com/cesarpizarra/intro-section-with-dropdown-navigation-main",
-    externalLink:
-      "https://cesarpizarra.github.io/intro-section-with-dropdown-navigation-main/",
-  },
+
   // {
   //   backgroundImage: MovieFlix,
   //   title: "Movie Flix",
@@ -199,12 +190,30 @@ export const projects = [
     externalLink: "https://cesarpizarra.github.io/news-homepage/",
   },
   {
+    backgroundImage: IntroSection,
+    title: "Intro Section with Dropdown Navigation",
+    description:
+      "A Intro Section with Dropdown Navigation challenge from the Frontend Mentor website.",
+    githubLink:
+      "https://github.com/cesarpizarra/intro-section-with-dropdown-navigation-main",
+    externalLink:
+      "https://cesarpizarra.github.io/intro-section-with-dropdown-navigation-main/",
+  },
+
+  {
     backgroundImage: WeatherApp,
     title: "Weather App",
     description:
       "Dynamic weather app with real-time updates and location-based forecasts.",
     githubLink: "https://github.com/cesarpizarra/weather-app",
     externalLink: "https://cesarpizarra.github.io/weather-app/",
+  },
+  {
+    backgroundImage: LoginForm,
+    title: "Login Form",
+    description: "A simple aesthetic login form",
+    githubLink: "https://github.com/cesarpizarra/loginform",
+    externalLink: "https://cesarpizarra.github.io/loginform/",
   },
 ];
 

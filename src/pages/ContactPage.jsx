@@ -11,7 +11,7 @@ const ContactPage = () => {
     <MainLayout>
       <div
         name="contact"
-        className="w-full min-h-screen bg-[#111623] text-white pt-40 lg:pt-60"
+        className="w-full min-h-screen bg-[#111623] text-white pt-44 lg:pt-60"
       >
         <div className="max-w-xl h-full mx-auto px-5 flex justify-center items-center">
           <div

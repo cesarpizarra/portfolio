@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import { BiMenuAltRight } from "react-icons/bi";
-import { socialLinks, navLinks, logo } from "../constant/api.js";
+import { socialLinks, navLinks } from "../constant/api.js";
 import { FaTimes } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import logoImage from "../assets/logo-cesar.png";
 
 const NavBar = () => {
   const [nav, setNav] = useState(false);
@@ -22,13 +23,23 @@ const NavBar = () => {
   return (
     <div className="z-10 fixed w-full bg-[#111623] flex justify-between items-center px-3 md:px-10  py-3">
       <div className="flex items-center justify-center">
-        <img src={logo.logo} alt="Log" className="w-16" />
+        <img
+          src={logoImage}
+          alt="Logo"
+          className="w-16 animate__animated animate__fadeInDown"
+        />
       </div>
 
       {/* menu item */}
       <ul className="hidden md:flex justify-center items-center menu text-white">
         {navLinks.map((link, index) => (
-          <li key={index}>
+          <li
+            key={index}
+            className={` ${
+              !nav ? "animate__animated animate__fadeInDown" : ""
+            }`}
+            style={{ animationDelay: `${index * 0.5}s` }}
+          >
             <Link to={link.path} onClick={handleNavClick}>
               {link.label}
             </Link>
@@ -37,7 +48,10 @@ const NavBar = () => {
       </ul>
 
       {/* Hamburger bar menu */}
-      <div onClick={handleClickNav} className="md:hidden z-10 cursor-pointer">
+      <div
+        onClick={handleClickNav}
+        className="md:hidden z-10 cursor-pointer animate__animated animate__fadeInDown"
+      >
         {!nav ? (
           <BiMenuAltRight size={40} className="text-white" />
         ) : (
@@ -57,8 +71,9 @@ const NavBar = () => {
           <li
             key={index}
             className={`py-6 text-2xl ${
-              nav ? "slide-in-right active" : "slide-in-left"
+              nav ? "animate__animated animate__backInUp" : ""
             }`}
+            style={{ animationDelay: `${index * 0.5}s` }}
           >
             <Link to={link.path} onClick={handleNavClick}>
               {link.label}
