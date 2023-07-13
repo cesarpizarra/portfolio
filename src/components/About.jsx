@@ -20,7 +20,7 @@ const About = () => {
     <MainLayout>
       <div className="w-full min-h-screen pt-40 lg:pt-0 bg-[#111623] text-white pb-20 overflow-hidden">
         <div className="flex flex-col justify-center items-center w-full h-screen ">
-          <div className="max-w-[1200px] w-full mx-auto justify-center  items-center px-5 md:px-10 grid grid-cols-1 sm:grid-cols-2 gap-10">
+          <div className="max-w-[1200px] w-full mx-auto justify-center  items-center px-4  grid grid-cols-1 sm:grid-cols-2 gap-10">
             <div className="text-left">
               <p
                 data-aos="fade-up"
@@ -44,7 +44,7 @@ const About = () => {
             </div>
           </div>
 
-          <div className="max-w-[1200px] w-full px-5 md:px-10 grid sm:grid-cols-2 gap-10">
+          <div className="max-w-[1200px] w-full grid sm:grid-cols-2 gap-10 px-4">
             <div className="pt-4">
               {about.intro.map((paragraph, index) => (
                 <p key={index} data-aos="fade-up" className="mb-4">

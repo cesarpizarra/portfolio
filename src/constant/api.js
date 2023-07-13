@@ -78,12 +78,12 @@ export const socialLinks = [
     bgColor: "bg-red-500",
     label: "TikTok",
   },
-  {
-    icon: FaUser,
-    link: "https://example.com/resume",
-    bgColor: "bg-green-600",
-    label: "Resume",
-  },
+  // {
+  //   icon: FaUser,
+  //   link: "https://example.com/resume",
+  //   bgColor: "bg-green-600",
+  //   label: "Resume",
+  // },
 ];
 
 export const homePage = {
@@ -151,69 +151,70 @@ export const skillsData = [
 
 export const projects = [
   {
-    backgroundImage: Portfolio,
-    title: "My Personal Portfolio",
+    project_img: Portfolio,
+    name: "My Personal Portfolio",
     description: "This is my personal portfolio: a showcase of my work. ",
     githubLink: "https://github.com/cesarpizarra/portfolio",
-    externalLink: "https://cezaru.vercel.app/",
+    project_link: "https://cezaru.vercel.app/",
   },
   {
-    backgroundImage: UrlMasterLink,
-    title: "Url-Shortening-Api-Master",
+    project_img: UrlMasterLink,
+    name: "Url Shortening Api",
     description:
       "A Url-Shortening-Api-Master challenge from the Frontend Mentor website.",
     githubLink: "https://github.com/cesarpizarra/url-shortening-api-master",
-    externalLink: "https://cesarpizarra.github.io/url-shortening-api-master/",
+    project_link: "https://cesarpizarra.github.io/url-shortening-api-master/",
   },
   {
-    backgroundImage: TodoApp,
-    title: "Todo App",
+    project_img: TodoApp,
+    name: "Todo App",
     description:
       "A Challenge challenge from the Frontend Mentor website, with a dark/light mode theme switcher and local storage.",
     githubLink: "https://github.com/cesarpizarra/todo-app",
-    externalLink: "https://todo-app-teal-nu.vercel.app/",
+    project_link: "https://todo-app-teal-nu.vercel.app/",
   },
 
   // {
-  //   backgroundImage: MovieFlix,
-  //   title: "Movie Flix",
+  //   project_img: MovieFlix,
+  //   name: "Movie Flix",
   //   description:
   //     "Sleek movie app showcasing OMDb API data and stunning visuals.",
   //   githubLink: "https://github.com/cesarpizarra/movie-app",
-  //   externalLink: "https://cesarpizarra.github.io/movie-app/",
+  //   project_link: "https://cesarpizarra.github.io/movie-app/",
   // },
   {
-    backgroundImage: NewsHomePage,
-    title: "News Home Page",
+    project_img: NewsHomePage,
+    name: "News Home Page",
     description: "A News Home Page challenge from the Frontend Mentor website.",
     githubLink: "https://github.com/cesarpizarra/news-homepage",
-    externalLink: "https://cesarpizarra.github.io/news-homepage/",
+    project_link: "https://cesarpizarra.github.io/news-homepage/",
   },
   {
-    backgroundImage: IntroSection,
-    title: "Intro Section with Dropdown Navigation",
+    project_img: IntroSection,
+    name: "Intro Section Dropdown Navigation",
     description:
       "A Intro Section with Dropdown Navigation challenge from the Frontend Mentor website.",
     githubLink:
       "https://github.com/cesarpizarra/intro-section-with-dropdown-navigation-main",
-    externalLink:
+    project_link:
       "https://cesarpizarra.github.io/intro-section-with-dropdown-navigation-main/",
   },
 
   {
-    backgroundImage: WeatherApp,
-    title: "Weather App",
+    project_img: WeatherApp,
+    name: "Weather App",
     description:
       "Dynamic weather app with real-time updates and location-based forecasts.",
     githubLink: "https://github.com/cesarpizarra/weather-app",
-    externalLink: "https://cesarpizarra.github.io/weather-app/",
+    project_link: "https://cesarpizarra.github.io/weather-app/",
   },
   {
-    backgroundImage: LoginForm,
-    title: "Login Form",
-    description: "A simple aesthetic login form",
+    project_img: LoginForm,
+    name: "Login Form",
+    description:
+      "This is a simple responsive login form created using Tailwind CSS and HTML. ",
     githubLink: "https://github.com/cesarpizarra/loginform",
-    externalLink: "https://cesarpizarra.github.io/loginform/",
+    project_link: "https://cesarpizarra.github.io/loginform/",
   },
 ];
 

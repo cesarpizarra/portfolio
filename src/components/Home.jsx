@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { AiOutlineArrowRight } from "react-icons/ai";
+import { socialLinks } from "../constant/api";
 import { homePage } from "../constant/api";
 
 const Home = () => {
@@ -22,7 +22,7 @@ const Home = () => {
         data-aos="fade-right"
         data-aos-offset="300"
         data-aos-easing="ease-in-sine"
-        className="max-w-[1200px] mx-auto px-5 md:px-10 flex flex-col gap-4 justify-center h-screen"
+        className="max-w-[1200px] mx-auto px-4 flex flex-col gap-4 justify-center h-screen"
       >
         <p className="text-[#2ABC7F] text-3xl font-medium">{title}</p>
         {/* Animate hover */}
@@ -46,16 +46,19 @@ const Home = () => {
           {intro}
         </h2>
         <p className="text-white">{description}</p>
-
-        <div>
-          <button className="flex items-center group transition duration-300 border border-[#2ABC7F] hover:bg-[#2ABC7F] text-white px-12 py-3 rounded-lg">
-            Projects
-            <span className="group-hover:rotate-90 duration-300">
-              <a href="#project">
-                <AiOutlineArrowRight size={20} className="ml-3" />
-              </a>
-            </span>
-          </button>
+        <div className="card hidden md:flex">
+          <a href={socialLinks[0].link} className="social-link1">
+            {socialLinks[0].icon({ size: 20 })}
+          </a>
+          <a href={socialLinks[1].link} className="social-link2">
+            {socialLinks[1].icon({ size: 20 })}
+          </a>
+          <a href={socialLinks[2].link} className="social-link3">
+            {socialLinks[2].icon({ size: 20 })}
+          </a>
+          <a href={socialLinks[3].link} className="social-link4">
+            {socialLinks[3].icon({ size: 20 })}
+          </a>
         </div>
       </div>
     </div>

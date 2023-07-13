@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import MainLayout from "../layout/MainLayout";
 import { projects } from "../constant/api";
-
+import { FiExternalLink, FiGithub } from "react-icons/fi";
 const ProjectPage = () => {
   const [hoveredIndex, setHoveredIndex] = useState(null);
 
@@ -24,12 +24,12 @@ const ProjectPage = () => {
       >
         <div className="max-w-[1200px] mx-auto px-5 md:px-10">
           <div data-aos="fade-up" className="text-left">
-            <h1 className="text-5xl font-bold text-green-500">
+            <h1 className="text-5xl font-bold text-[#2ABC7F]">
               {text.split("").map((letter, index) => (
                 <span
                   key={index}
                   className={
-                    hoveredIndex === index ? "hover:text-green-500" : ""
+                    hoveredIndex === index ? "hover:text-[#2ABC7F]" : ""
                   }
                   onMouseEnter={() => handleItemHover(index)}
                   onMouseLeave={handleItemLeave}
@@ -46,46 +46,54 @@ const ProjectPage = () => {
           {/* Grid items */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2">
             {projects.map((project, index) => (
-              <div
-                key={index}
-                data-aos="fade-up"
-                className={`overflow-hidden w-full rounded ${
-                  index === 0 && projects.length > 1 ? "md:col-span-2" : ""
-                } ${index === projects.length - 1 ? "lg:col-span-2" : ""}`}
-              >
+              <div key={index}>
                 <div
-                  className="relative"
-                  onMouseEnter={() => handleItemHover(index)}
-                  onMouseLeave={handleItemLeave}
+                  data-aos="fade-up"
+                  className="dark:bg-slate-800 drop-shadow-2xl w-80 h-96 rounded"
                 >
-                  <img
-                    src={project.backgroundImage}
-                    alt={project.title}
-                    className="w-full h-64 object-cover"
-                  />
-                  {hoveredIndex === index && (
-                    <div className="absolute inset-0 flex">
-                      <div className="bg-black bg-opacity-75 p-4  w-full flex  items-center justify-center flex-col">
-                        <h2 className="text-xl font-bold text-white mb-2">
-                          {project.title}
-                        </h2>
-                        <p className="text-sm text-gray-300">
-                          {project.description}
-                        </p>
-
-                        <div className="pt-2">
-                          <a
-                            href={project.externalLink}
-                            className="block border border-green-500 py-2 px-6 hover:bg-green-500 "
-                            target="_blank"
-                            rel="noopener noreferrer"
-                          >
-                            View Site
-                          </a>
-                        </div>
+                  <div className="p-2 flex justify-center items-center flex-col">
+                    <div className="flex flex-col gap-2">
+                      <div className="overflow-hidden">
+                        <img
+                          src={project.project_img}
+                          alt=""
+                          className="hover:scale-105 duration-300 transition"
+                        />
+                      </div>
+                      <div className="text-white text-center text-2xl font-semibold pt-2">
+                        {project.name}
+                      </div>
+                      <div className="text-sm text-gray-400">
+                        {project.description}
                       </div>
                     </div>
-                  )}
+                  </div>
+                  <div className="flex gap-4 absolute bottom-4 left-2">
+                    <a
+                      href={project.project_link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <button className="Btn">
+                        <div className="sign">
+                          <FiExternalLink size={20} />
+                        </div>
+                        <div className="text">Visit</div>
+                      </button>
+                    </a>
+                    <a
+                      href={project.githubLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <button className="Btn">
+                        <div className="sign">
+                          <FiGithub size={20} />
+                        </div>
+                        <div className="text">Code</div>
+                      </button>
+                    </a>
+                  </div>
                 </div>
               </div>
             ))}

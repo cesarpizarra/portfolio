@@ -4,7 +4,7 @@ import MainLayout from "../layout/MainLayout";
 import Footer from "../components/Footer";
 
 const Contact = () => {
-  const { get, info, button } = contacts;
+  const { get, info } = contacts;
 
   return (
     <MainLayout>
@@ -18,9 +18,7 @@ const Contact = () => {
               {get}
             </h1>
             <p className="text-center">{info}</p>
-            <button className="font-bold px-12 py-3 rounded-lg border border-[#2ABC7F] hover:bg-[#2ABC7F] transition duration-300">
-              {button}
-            </button>
+            <button className="button text-white"> Say Hello</button>
           </div>
         </div>
 
