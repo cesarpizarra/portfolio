@@ -1,6 +1,7 @@
 import React, { useState } from "react";
-import { socialLinks } from "../constant/api";
+
 import { homePage } from "../constant/api";
+import { AiOutlineArrowRight } from "react-icons/ai";
 
 const Home = () => {
   const [hoveredLetter, setHoveredLetter] = useState(null);
@@ -46,19 +47,15 @@ const Home = () => {
           {intro}
         </h2>
         <p className="text-white">{description}</p>
-        <div className="card hidden md:flex">
-          <a href={socialLinks[0].link} className="social-link1">
-            {socialLinks[0].icon({ size: 20 })}
-          </a>
-          <a href={socialLinks[1].link} className="social-link2">
-            {socialLinks[1].icon({ size: 20 })}
-          </a>
-          <a href={socialLinks[2].link} className="social-link3">
-            {socialLinks[2].icon({ size: 20 })}
-          </a>
-          <a href={socialLinks[3].link} className="social-link4">
-            {socialLinks[3].icon({ size: 20 })}
-          </a>
+        <div>
+          <button className="flex items-center group transition duration-300 border border-[#2ABC7F] button text-white px-12 py-3 rounded-lg">
+            Projects
+            <span className="group-hover:rotate-90 duration-300">
+              <a href="#project">
+                <AiOutlineArrowRight size={20} className="ml-3" />
+              </a>
+            </span>
+          </button>
         </div>
       </div>
     </div>

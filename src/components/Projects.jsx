@@ -49,7 +49,11 @@ const Project = () => {
   }, []);
 
   return (
-    <div className="w-full min-h-screen pt-40 lg:pt-0 bg-[#111623] text-white pb-20 overflow-hidden">
+    <div
+      id="project"
+      name="project"
+      className="w-full min-h-screen pt-40 lg:pt-0 bg-[#111623] text-white pb-20 overflow-hidden"
+    >
       <div className="max-w-[1200px] mx-auto px-4 md:px-10">
         <div data-aos="fade-up" className="text-left">
           <h1 className="text-5xl font-bold text-[#2ABC7F]">

@@ -47,6 +47,7 @@ const NavBar = () => {
         </div>
 
         {/* Mobile view */}
+
         <ul
           className={`${
             !nav
@@ -68,7 +69,7 @@ const NavBar = () => {
                 to={link.path}
                 onClick={() => {
                   handleNavClick();
-                  link.clicked = true; // Set a property to track if the link is clicked
+                  link.clicked = true;
                 }}
               >
                 {link.label}
