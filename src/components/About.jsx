@@ -21,7 +21,7 @@ const About = () => {
         <div className="flex flex-col justify-center items-center w-full h-full">
           <div className="max-w-[1200px] mx-auto justify-center items-center px-4 md:px-10 grid grid-cols-1 sm:grid-cols-2 gap-10">
             <div className="col-span-1">
-              <div data-aos="fade-right" className="h-auto">
+              <div data-aos="fade-up" className="h-auto">
                 <img
                   src={about.mypic}
                   alt="My Picture"
