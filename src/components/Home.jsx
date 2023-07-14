@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import { socialLinks } from "../constant/api";
 import { homePage } from "../constant/api";
 import { AiOutlineArrowRight } from "react-icons/ai";
 
@@ -23,8 +23,28 @@ const Home = () => {
         data-aos="fade-right"
         data-aos-offset="300"
         data-aos-easing="ease-in-sine"
-        className="max-w-[1200px] mx-auto px-4 flex flex-col gap-4 justify-center h-screen"
+        className="max-w-[1200px] mx-auto px-4 md:px-14 flex flex-col gap-2 md:gap-3 justify-center h-screen"
       >
+        {/* Social media accounts */}
+        <div className="hidden xl:flex fixed flex-col top-[40%] left-[-40px]">
+          <ul className="mb-4">
+            {socialLinks.map((item, index) => (
+              <li
+                key={index}
+                className="w-[150px] h-[45px] flex justify-between items-center "
+              >
+                <a
+                  className="flex justify-between items-center w-full text-gray-300 hover:text-[#2ABC7F] duration-300"
+                  href={item.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {item.icon({ size: 30 })}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
         <p className="text-[#2ABC7F] text-3xl font-medium">{title}</p>
         {/* Animate hover */}
         <h1 className="text-white font-bold text-4xl lg:text-8xl">

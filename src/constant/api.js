@@ -5,6 +5,7 @@ import {
   FaUser,
   FaTiktok,
 } from "react-icons/fa";
+
 import htmlLogo from "../assets/htmlicon.png";
 import cssLogo from "../assets/css.png";
 import jsLogo from "../assets/js.png";
@@ -25,6 +26,7 @@ import TodoApp from "../assets/projects/TodoApp.png";
 import MovieFlix from "../assets/projects/MovieFlix.png";
 import NewsHomePage from "../assets/projects/NewsHomePage.png";
 import WeatherApp from "../assets/projects/WeatherApp.png";
+import MyPic from "../assets/MyPic.jpg";
 
 export const logo = {
   logo: Logo,
@@ -78,12 +80,12 @@ export const socialLinks = [
     bgColor: "bg-red-500",
     label: "TikTok",
   },
-  // {
-  //   icon: FaUser,
-  //   link: "https://example.com/resume",
-  //   bgColor: "bg-green-600",
-  //   label: "Resume",
-  // },
+  {
+    icon: FaUser,
+    link: "https://example.com/resume",
+    bgColor: "bg-green-600",
+    label: "Resume",
+  },
 ];
 
 export const homePage = {
@@ -95,6 +97,7 @@ export const homePage = {
 };
 
 export const about = {
+  mypic: MyPic,
   intro: [
     "Hi there! I'm Cesar, and I'm on a journey to pursue a career in web development. I've always been fascinated by the power of websites and their ability to solve problems and automate processes.",
     "Since then, my passion for web development has only grown stronger. I began my dedicated journey in 2022, diving into the world of coding and web technologies. With each project, I aim to push boundaries, deliver exceptional user experiences, and make a positive impact through technology.",

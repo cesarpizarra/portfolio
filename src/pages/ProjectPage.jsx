@@ -22,7 +22,7 @@ const ProjectPage = () => {
         name="projects"
         className="w-full min-h-screen bg-[#111623] text-white pb-20 pt-40 lg:pt-36 overflow-hidden"
       >
-        <div className="max-w-[1200px] mx-auto px-5 md:px-10">
+        <div className="max-w-[1200px] mx-auto px-4 md:px-10">
           <div data-aos="fade-up" className="text-left">
             <h1 className="text-5xl font-bold text-[#2ABC7F]">
               {text.split("").map((letter, index) => (
@@ -44,7 +44,7 @@ const ProjectPage = () => {
           </div>
 
           {/* Grid items */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 place-items-center">
             {projects.map((project, index) => (
               <div key={index}>
                 <div
