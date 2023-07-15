@@ -156,7 +156,8 @@ export const projects = [
   {
     project_img: Portfolio,
     name: "My Personal Portfolio",
-    description: "This is my personal portfolio: a showcase of my work. ",
+    description:
+      "This is my personal portfolio, where I showcase a collection of my work to demonstrate my skills and expertise. ",
     githubLink: "https://github.com/cesarpizarra/portfolio",
     project_link: "https://cezaru.vercel.app/",
   },
@@ -172,7 +173,7 @@ export const projects = [
     project_img: TodoApp,
     name: "Todo App",
     description:
-      "A Challenge challenge from the Frontend Mentor website, with a dark/light mode theme switcher and local storage.",
+      "A  challenge from the Frontend Mentor website, with a dark/light mode theme switcher and local storage.",
     githubLink: "https://github.com/cesarpizarra/todo-app",
     project_link: "https://todo-app-teal-nu.vercel.app/",
   },
@@ -194,7 +195,7 @@ export const projects = [
   },
   {
     project_img: IntroSection,
-    name: "Intro Section Dropdown Navigation",
+    name: "Intro Section Dropdown ",
     description:
       "A Intro Section with Dropdown Navigation challenge from the Frontend Mentor website.",
     githubLink:

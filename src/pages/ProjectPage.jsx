@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import MainLayout from "../layout/MainLayout";
 import { projects } from "../constant/api";
 import { FiExternalLink, FiGithub } from "react-icons/fi";
+
 const ProjectPage = () => {
   const [hoveredIndex, setHoveredIndex] = useState(null);
 
@@ -44,12 +45,16 @@ const ProjectPage = () => {
           </div>
 
           {/* Grid items */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 place-items-center">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             {projects.map((project, index) => (
-              <div key={index}>
+              <div
+                key={index}
+                className="flex flex-col items-center"
+                style={{ minHeight: "360px" }}
+              >
                 <div
                   data-aos="fade-up"
-                  className="bg-[#1c2131] drop-shadow-2xl w-80 h-96 rounded"
+                  className="bg-[#1c2131] drop-shadow-2xl w-full rounded flex flex-col justify-between h-full"
                 >
                   <div className="p-2 flex justify-center items-center flex-col">
                     <div className="flex flex-col gap-2">
@@ -57,18 +62,18 @@ const ProjectPage = () => {
                         <img
                           src={project.project_img}
                           alt=""
-                          className="hover:scale-105 duration-300 transition"
+                          className="hover:scale-105 duration-300 transition object-cover h-[200px] w-full"
                         />
                       </div>
                       <div className="text-white text-center text-2xl font-semibold pt-2">
                         {project.name}
                       </div>
-                      <div className="text-sm text-gray-400">
+                      <div className="text-sm text-center text-gray-400 flex-grow">
                         {project.description}
                       </div>
                     </div>
                   </div>
-                  <div className="flex gap-4 absolute bottom-4 left-2">
+                  <div className="flex gap-4 py-5 ml-4">
                     <a
                       href={project.project_link}
                       target="_blank"

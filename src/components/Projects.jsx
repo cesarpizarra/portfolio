@@ -5,6 +5,7 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { projects } from "../constant/api";
 import { FiExternalLink, FiGithub } from "react-icons/fi";
+import { Link } from "react-router-dom";
 
 const Project = () => {
   const swiperRef = useRef(null);
@@ -13,6 +14,7 @@ const Project = () => {
   const [slidesPerView, setSlidesPerView] = useState(3);
 
   const text = "Projects";
+  const slicedProjects = projects.slice(0, 5);
 
   const handleItemHover = (index) => {
     setHoveredIndex(index);
@@ -29,6 +31,10 @@ const Project = () => {
   const handleDotClick = (index) => {
     const swiperInstance = swiperRef.current.swiper;
     swiperInstance.slideTo(index); // Navigate to the slide with the specified index
+  };
+
+  const handleLinkClick = () => {
+    window.scrollTo(0, 0);
   };
 
   useEffect(() => {
@@ -77,7 +83,7 @@ const Project = () => {
           </p>
         </div>
         <div
-          className="ml-4 flex gap-8 justify-center items-center relative flex-wrap"
+          className="flex gap-8 justify-center items-center relative flex-wrap"
           data-aos="fade-up"
         >
           <Swiper
@@ -88,9 +94,9 @@ const Project = () => {
             pagination={{ clickable: true }}
             onSlideChange={handleSlideChange}
           >
-            {projects.map((project, key) => (
+            {slicedProjects.map((project, key) => (
               <SwiperSlide key={key}>
-                <div className="bg-[#1c2131]  shadow-lg w-80 h-96 rounded ">
+                <div className="bg-[#1c2131]  shadow-lg w-full h-96 rounded ">
                   <div className="p-2 flex justify-center items-center flex-col">
                     <div className="flex flex-col gap-2">
                       <div className="overflow-hidden">
@@ -139,7 +145,7 @@ const Project = () => {
             ))}
           </Swiper>
           <div className="swiper-pagination absolute bottom-[-2rem] left-0 right-0 flex justify-center items-center">
-            {projects.map((_, index) => (
+            {slicedProjects.map((_, index) => (
               <div
                 key={index}
                 className={`w-3 h-3 cursor-pointer rounded-full mx-1 transition-all duration-300 ${
@@ -149,6 +155,15 @@ const Project = () => {
               ></div>
             ))}
           </div>
+        </div>
+        <div className="w-full flex justify-center pt-16">
+          <Link
+            to="/projects"
+            className="button text-white py-2"
+            onClick={handleLinkClick}
+          >
+            See more
+          </Link>
         </div>
       </div>
     </div>
