@@ -20,7 +20,7 @@ const SkillsPage = () => {
     <MainLayout>
       <div
         name="skills"
-        className="w-full min-h-screen bg-[#111623] text-white pb-20 pt-44 lg:pt-0 overflow-hidden "
+        className="w-full min-h-screen bg-[#111623] text-white pb-20 pt-40 lg:pt-0 overflow-hidden "
       >
         <div className="max-w-[1200px] w-full h-screen mx-auto px-4 md:px-10 flex flex-col justify-center">
           <div data-aos="fade-up" className="text-left">

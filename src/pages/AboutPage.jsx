@@ -17,7 +17,7 @@ const AboutPage = () => {
 
   return (
     <MainLayout>
-      <div className="w-full min-h-screen pt-40 lg:pt-32 bg-[#111623] text-white pb-20">
+      <div className="w-full min-h-screen pt-32 lg:pt-32 bg-[#111623] text-white pb-20">
         <div className="flex flex-col justify-center items-center w-full h-full">
           <div className="max-w-[1200px] mx-auto justify-center px-4 md:px-10 grid grid-cols-1 sm:grid-cols-2 gap-10">
             <div className="col-span-1">
