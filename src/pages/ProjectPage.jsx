@@ -20,7 +20,7 @@ const ProjectPage = () => {
       <div
         id="project"
         name="projects"
-        className="w-full min-h-screen bg-[#111623] text-white pb-20 pt-40 lg:pt-36 overflow-hidden"
+        className="w-full min-h-screen bg-[#111623] text-white pb-20 pt-32 lg:pt-36 overflow-hidden"
       >
         <div className="max-w-[1200px] mx-auto px-4 md:px-10">
           <div data-aos="fade-up" className="text-left">
@@ -49,7 +49,7 @@ const ProjectPage = () => {
               <div key={index}>
                 <div
                   data-aos="fade-up"
-                  className="dark:bg-slate-800 drop-shadow-2xl w-80 h-96 rounded"
+                  className="bg-[#1c2131] drop-shadow-2xl w-80 h-96 rounded"
                 >
                   <div className="p-2 flex justify-center items-center flex-col">
                     <div className="flex flex-col gap-2">

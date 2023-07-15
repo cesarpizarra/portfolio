@@ -18,6 +18,7 @@ const NavBar = () => {
     }
   };
 
+  let email = "cpizarra002@gmail.com";
   return (
     <div className="z-10 fixed w-full bg-[#111623] flex justify-between items-center px-3 md:px-10  py-3">
       <div className="flex items-center justify-center">
@@ -74,6 +75,44 @@ const NavBar = () => {
           </li>
         ))}
       </ul>
+
+      {/* Social media accounts */}
+      <div className="hidden xl:flex fixed flex-col top-[50%] left-0">
+        <ul className="mb-4">
+          {socialLinks.map((item, index) => (
+            <li
+              key={index}
+              className={`w-[150px] h-[45px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 ${item.bgColor}`}
+            >
+              <a
+                className="flex justify-between items-center w-full text-gray-300"
+                href={item.link}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span className="mr-2">{item.label}</span>
+                {item.icon({ size: 30 })}
+              </a>
+            </li>
+          ))}
+        </ul>
+        <div className="bg-white w-px h-44 ml-4"></div>
+      </div>
+
+      <div className="  text-white flex-col hidden xl:flex fixed right-8 top-[45%] ">
+        {email.split("").map((value, index) => {
+          return (
+            <p
+              key={index}
+              className="flex items-start rotate-90 hover:text-[#2ABC7F] duration-300"
+              style={{ lineHeight: 0.8 }}
+            >
+              {value}
+            </p>
+          );
+        })}
+        <div className="bg-white w-px h-60 ml-2 mt-3"></div>
+      </div>
     </div>
   );
 };

@@ -49,7 +49,7 @@ const Skills = () => {
             {skillsData.map((skill, index) => (
               <div
                 data-aos="fade-up"
-                className="dark:bg-slate-800 rounded "
+                className="bg-[#1c2131] rounded "
                 key={index}
               >
                 <img

@@ -90,7 +90,7 @@ const Project = () => {
           >
             {projects.map((project, key) => (
               <SwiperSlide key={key}>
-                <div className="dark:bg-slate-800 shadow-lg w-80 h-96 rounded ">
+                <div className="bg-[#1c2131]  shadow-lg w-80 h-96 rounded ">
                   <div className="p-2 flex justify-center items-center flex-col">
                     <div className="flex flex-col gap-2">
                       <div className="overflow-hidden">
