@@ -1,8 +1,16 @@
 import React from "react";
 import { contacts } from "../constant/index";
 import Footer from "../components/Footer";
+
 const Contact = () => {
   const { get, info } = contacts;
+  const email = "cpizarra002@gmail.com";
+  const subject = "Hello from My Website";
+  const body = "I'd like to say hello!";
+
+  const emailLink = `mailto:${email}?subject=${encodeURIComponent(
+    subject
+  )}&body=${encodeURIComponent(body)}`;
 
   return (
     <section data-aos="fade-up" id="contact" className="mt-48 lg:mt-36">
@@ -13,7 +21,9 @@ const Contact = () => {
         >
           <h1 className="text-3xl font-bold text-center text-[cyan] ">{get}</h1>
           <p className="text-justify text-white">{info}</p>
-          <button className="shadow__btn"> Say Hello</button>
+          <a href={emailLink}>
+            <button className="shadow__btn">Say Hello</button>
+          </a>
         </div>
       </div>
       <Footer />

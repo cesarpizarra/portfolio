@@ -7,10 +7,12 @@ import "aos/dist/aos.css";
 import "animate.css";
 const Loader = () => {
   return (
-    <div className="container">
-      <div className="ld-ripple">
-        <div></div>
-        <div></div>
+    <div className="loader-container">
+      <div className="loader">
+        <div className="orbe" style={{ "--index": "0" }}></div>
+        <div className="orbe" style={{ "--index": "1" }}></div>
+        <div className="orbe" style={{ "--index": "2" }}></div>
+        <div className="orbe" style={{ "--index": "3" }}></div>
       </div>
     </div>
   );
@@ -23,11 +25,19 @@ const App = () => {
     AOS.init({ duration: 1000 });
   });
 
+  // Enable and disable scrolling
+  useEffect(() => {
+    if (isLoading) {
+      document.body.style.overflow = "hidden"; // Disable scrolling
+    } else {
+      document.body.style.overflow = "auto"; // Enable scrolling
+    }
+  }, [isLoading]);
   // Simulating API loading
   React.useEffect(() => {
     setTimeout(() => {
       setIsLoading(false);
-    }, 2000);
+    }, 3000);
   }, []);
   return (
     <div className="mx-auto min-h-screen max-w-screen-xl px-6 py-12  md:px-12 md:py-16 lg:px-20 ">
@@ -35,7 +45,7 @@ const App = () => {
         <Loader />
       ) : (
         <div className="lg:flex lg:justify-between">
-          <LeftSide />
+          <LeftSide isLoading={isLoading} />
           <RightSide />
         </div>
       )}

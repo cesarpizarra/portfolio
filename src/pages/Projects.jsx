@@ -38,13 +38,13 @@ const Projects = () => {
                   project.tools.map((tool, toolIndex) => (
                     <li
                       key={toolIndex}
-                      className="text-sm font-medium bg-[cyan] px-3 py-1 rounded-full text-gray-800 "
+                      className="text-sm font-medium  rounded-full text-gray-400 "
                     >
                       {tool}
                     </li>
                   ))}
-                <a href={project.githubLink} className="text-white">
-                  <FiGithub size={20} />
+                <a href={project.githubLink} className="text-gray-400">
+                  <FiGithub size={17} />
                 </a>
               </ul>
             </div>

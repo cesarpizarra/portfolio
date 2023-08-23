@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { personalInfo, socialIcons, navLinks } from "../constant/index";
 
-const LeftSide = () => {
+const LeftSide = ({ isLoading }) => {
   const [activeLink, setActiveLink] = useState("");
 
   // Function to handle scroll events
@@ -34,7 +34,10 @@ const LeftSide = () => {
     setActiveLink(title);
   };
   return (
-    <header className=" lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-1/2 lg:flex-col lg:py-12 ">
+    <header
+      className="
+      lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-1/2 lg:flex-col lg:py-12 "
+    >
       <div className="flex lg:fixed justify-center flex-col">
         {/* Information */}
         <div className=" max-w-md">
@@ -77,7 +80,7 @@ const LeftSide = () => {
         </div>
         {/* Social Icons */}
         <div className="mt-8 md:mt-16">
-          <ul className="flex gap-4">
+          <ul className="flex gap-4 ">
             {socialIcons.map((item, index) => (
               <li
                 key={index}
