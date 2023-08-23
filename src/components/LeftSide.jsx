@@ -35,7 +35,7 @@ const LeftSide = ({ isLoading }) => {
   };
   return (
     <header
-      className="
+      className="animate__animated animate__fadeIn
       lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-1/2 lg:flex-col lg:py-12 "
     >
       <div className="flex lg:fixed justify-center flex-col">
