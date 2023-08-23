@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="mt-20">
+    <footer className="mt-36">
       <p className="text-center text-gray-400">
         Built by Cesar G. Pizarra © 2023
       </p>

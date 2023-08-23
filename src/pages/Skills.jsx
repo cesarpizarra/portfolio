@@ -2,7 +2,7 @@ import React from "react";
 import { skills } from "../constant/index";
 const Skills = () => {
   return (
-    <section id="skills" className="mt-40">
+    <section data-aos="fade-up" id="skills" className="mt-40">
       <h1 className="flex lg:hidden text-2xl font-semibold py-8 uppercase text-white">
         Skills
       </h1>

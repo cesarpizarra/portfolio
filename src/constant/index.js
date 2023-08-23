@@ -19,6 +19,7 @@ import TodoApp from "../assets/projects/TodoApp.png";
 import MovieFlix from "../assets/projects/MovieFlix.png";
 import NewsHomePage from "../assets/projects/NewsHomePage.png";
 import WeatherApp from "../assets/projects/WeatherApp.png";
+import BookMarkLandingPage from "../assets/projects/bookmark-landing-page.png";
 
 export const personalInfo = [
   {
@@ -33,6 +34,7 @@ export const navLinks = [
   {
     title: "About",
     url: "#about",
+    isActiveLink: true,
   },
   {
     title: "Skills",
@@ -145,13 +147,22 @@ export const projects = [
     project_link: "https://cezaru.vercel.app/",
     tools: ["React", "Vite", "Tailwind"],
   },
+  // {
+  //   project_img: UrlMasterLink,
+  //   name: "Url Shortening Api",
+  //   description:
+  //     "A Url-Shortening-Api-Master challenge from the Frontend Mentor website.",
+  //   githubLink: "https://github.com/cesarpizarra/url-shortening-api-master",
+  //   project_link: "https://cesarpizarra.github.io/url-shortening-api-master/",
+  //   tools: ["React", "Vite", "Tailwind"],
+  // },
   {
-    project_img: UrlMasterLink,
-    name: "Url Shortening Api",
+    project_img: BookMarkLandingPage,
+    name: "Bookmark Landing Page",
     description:
-      "A Url-Shortening-Api-Master challenge from the Frontend Mentor website.",
-    githubLink: "https://github.com/cesarpizarra/url-shortening-api-master",
-    project_link: "https://cesarpizarra.github.io/url-shortening-api-master/",
+      "A Bookmark Landing Page challenge from the Frontend Mentor website.",
+    githubLink: "https://github.com/cesarpizarra/bookmark-landing-page",
+    project_link: "https://bookmark-landing-page-ten-silk.vercel.app/",
     tools: ["React", "Vite", "Tailwind"],
   },
   {

@@ -34,7 +34,7 @@ const LeftSide = () => {
     setActiveLink(title);
   };
   return (
-    <header className=" lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-1/2 lg:flex-col lg:justify-between lg:py-12 ">
+    <header className=" lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-1/2 lg:flex-col lg:py-12 ">
       <div className="flex lg:fixed justify-center flex-col">
         {/* Information */}
         <div className=" max-w-md">
@@ -61,7 +61,7 @@ const LeftSide = () => {
                 onClick={() => handleNavClick(link.title)}
                 className={`${
                   link.title === activeLink ? "text-white" : "text-gray-500"
-                } flex items-center gap-2 uppercase font-semibold group mb-2 cursor-pointer hover:text-white`}
+                } flex items-center gap-2 uppercase font-medium group mb-2 cursor-pointer hover:text-white`}
               >
                 <span
                   className={`${

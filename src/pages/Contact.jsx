@@ -5,8 +5,8 @@ const Contact = () => {
   const { get, info } = contacts;
 
   return (
-    <section id="contact">
-      <div className="max-w-xl h-screen mx-auto px-5 flex justify-center items-center ">
+    <section data-aos="fade-up" id="contact" className="mt-48 lg:mt-36">
+      <div className="max-w-xl mx-auto px-5 flex justify-center items-center ">
         <div
           data-aos="fade-up"
           className="flex flex-col gap-4 justify-center items-center"
