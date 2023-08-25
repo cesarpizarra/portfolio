@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { personalInfo, socialIcons, navLinks } from "../constant/index";
 
-const LeftSide = ({ isLoading }) => {
+const LeftSide = () => {
   const [activeLink, setActiveLink] = useState("");
 
   // Function to handle scroll events

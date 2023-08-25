@@ -43,7 +43,7 @@ const Projects = () => {
                       {tool}
                     </li>
                   ))}
-                <a href={project.githubLink} className="text-gray-400">
+                <a href={project.githubLink} className="text-[cyan]">
                   <FiGithub size={17} />
                 </a>
               </ul>

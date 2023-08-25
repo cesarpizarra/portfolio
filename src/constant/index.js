@@ -1,4 +1,11 @@
-import { FaGithub, FaLinkedin, FaFacebook, FaTiktok } from "react-icons/fa";
+import {
+  FaGithub,
+  FaLinkedin,
+  FaFacebook,
+  FaTiktok,
+  FaTwitter,
+} from "react-icons/fa";
+import { FiInstagram } from "react-icons/fi";
 import htmlLogo from "../assets/htmlicon.png";
 import cssLogo from "../assets/css.png";
 import jsLogo from "../assets/js.png";
@@ -26,7 +33,7 @@ export const personalInfo = [
     name: "Cesar G. Pizarra",
     career: "I'm a Web Developer",
     description:
-      "I'm passionate about creating engaging and user-friendly web experiences.",
+      "and I'm passionate about creating engaging and user-friendly web experiences.",
   },
 ];
 
@@ -66,6 +73,14 @@ export const socialIcons = [
   {
     icon: FaTiktok,
     link: "https://www.tiktok.com/@cesar_pizarra?is_from_webapp=1&sender_device=pc",
+  },
+  {
+    icon: FaTwitter,
+    link: "https://twitter.com/CesarPizarra3",
+  },
+  {
+    icon: FiInstagram,
+    link: "https://www.instagram.com/cesarpizarra/",
   },
 ];
 
@@ -208,7 +223,7 @@ export const projects = [
     project_img: LoginForm,
     name: "Login Form",
     description:
-      "This is a simple responsive login form created using Tailwind CSS and HTML. ",
+      "This is a simple responsive login form created using Tailwind CSS and HTML and JavaScript. ",
     githubLink: "https://github.com/cesarpizarra/loginform",
     project_link: "https://cesarpizarra.github.io/loginform/",
     tools: ["HTML", "JS", "Tailwind"],
