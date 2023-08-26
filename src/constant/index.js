@@ -92,7 +92,7 @@ export const about = {
     },
     {
       subtitle1:
-        "Since then, my passion for web development has only grown stronger. I began my dedicated journey in 2021, diving into the world of coding and web technologies. With each project, I aim to push boundaries, deliver exceptional user experiences, and make a positive impact through technology.",
+        "Since then, my passion for web development has only grown stronger. I began my dedicated journey in 2022, diving into the world of coding and web technologies. With each project, I aim to push boundaries, deliver exceptional user experiences, and make a positive impact through technology.",
     },
     {
       subtitle2:
