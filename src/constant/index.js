@@ -27,6 +27,7 @@ import MovieFlix from "../assets/projects/MovieFlix.png";
 import NewsHomePage from "../assets/projects/NewsHomePage.png";
 import WeatherApp from "../assets/projects/WeatherApp.png";
 import BookMarkLandingPage from "../assets/projects/bookmark-landing-page.png";
+import Fylo from "../assets/projects/Fylo Desktop.png";
 
 export const personalInfo = [
   {
@@ -190,12 +191,21 @@ export const projects = [
     tools: ["React", "Vite", "Tailwind"],
   },
 
+  // {
+  //   project_img: NewsHomePage,
+  //   name: "News Home Page",
+  //   description: "A News Home Page challenge from the Frontend Mentor website.",
+  //   githubLink: "https://github.com/cesarpizarra/news-homepage",
+  //   project_link: "https://cesarpizarra.github.io/news-homepage/",
+  //   tools: ["React", "Vite", "Tailwind"],
+  // },
   {
-    project_img: NewsHomePage,
-    name: "News Home Page",
-    description: "A News Home Page challenge from the Frontend Mentor website.",
-    githubLink: "https://github.com/cesarpizarra/news-homepage",
-    project_link: "https://cesarpizarra.github.io/news-homepage/",
+    project_img: Fylo,
+    name: "Fylo dark theme landing page",
+    description:
+      "A Fylo landing page challenge from the Frontend Mentor website.",
+    githubLink: "https://github.com/cesarpizarra/fylo",
+    project_link: "https://fylo-ashy.vercel.app/",
     tools: ["React", "Vite", "Tailwind"],
   },
   {
